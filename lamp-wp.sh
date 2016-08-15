@@ -109,5 +109,11 @@ done
 
 
 clear
+mkdir /var/www/html/wordpress && /var/www/html/wordpress
+wget https://wordpress.org/latest.zip
+yum install unzip -y
+unzip *
+
 echo 'Okay.... apache, php and mysql & Phpmyadinis installed, running and set to your desired password'
+echo 'Wordpress Downloaded in /var/www/html/wordpress'
 echo 'Edit /etc/httpd/conf.d/phpMyadmin.conf for allo IPs'
